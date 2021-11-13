@@ -1,0 +1,76 @@
+header { display: flex;
+    padding: 0px; 
+    width: 100%;
+    margin: auto;  
+}
+h1 {
+    font-family: 'Yuji Syuku';
+    font-size: 60px;
+  }
+h3 
+{
+    font-family: 'Yuji Syuku';
+    font-size: 40px;
+  }
+body {
+    font-family: 'Cabin';
+    font-size:18PX;
+    background-color: rgb(223, 163, 12);
+}
+/* start navigation */
+
+nav {
+    background-color: rgb(238, 194, 83);
+    
+  }
+  nav ul {display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li a { 
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #191645;
+  }
+  
+  nav li a:hover { 
+    background-color: #f5b70d;
+    color: white;
+  }
+  /* end navigation */
+
+  main {display:flex;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  aside { padding: 15px;
+   display:flex;
+    flex-basis:0;
+    flex-grow: 1;
+    align-content: space-between;
+    flex-flow:column;
+    justify-content: space-between;
+  }
+
+  article{display:flex;
+    flex-direction: column;
+    width: 75%;
+    flex-basis:0;
+    flex-grow: 2;
+      }
+/*FOOTER*/
+
+footer ul { 
+    display:flex;
+    list-style-type: none ;
+}
+footer p a {display: flex;
+        margin: auto ;
+        padding: 0;
+      }
+}
