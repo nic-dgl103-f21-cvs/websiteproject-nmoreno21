@@ -7,7 +7,7 @@ h1 {
     font-family: 'Yuji Syuku';
     font-size: 60px;
   }
-h3 
+h2,h3 
 {
     font-family: 'Yuji Syuku';
     font-size: 40px;
@@ -17,7 +17,12 @@ body {
     font-size:18PX;
     background-color: rgb(223, 163, 12);
 }
-/* start navigation */
+main.home {display:flex;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  /* start navigation */
 
 nav {
     background-color: rgb(238, 194, 83);
@@ -42,35 +47,61 @@ nav {
   }
   /* end navigation */
 
-  main {display:flex;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-  }
-
-  aside { padding: 15px;
-   display:flex;
-    flex-basis:0;
-    flex-grow: 1;
-    align-content: space-between;
-    flex-flow:column;
-    justify-content: space-between;
-  }
-
-  article{display:flex;
-    flex-direction: column;
-    width: 75%;
-    flex-basis:0;
-    flex-grow: 2;
-      }
 /*FOOTER*/
 
 footer ul { 
     display:flex;
     list-style-type: none ;
 }
-footer p a {display: flex;
-        margin: auto ;
-        padding: 0;
+p {display: flex;
+        margin: 10px;
+        padding: 10px;
       }
-}
+
+ /*code taken from w3schools*/     
+.fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+.fa:hover {
+        opacity: 0.7;
+    }
+    
+.fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+.fa-instagram {
+        background: #b4136c;
+        color: white;
+      }   
+      
+/*end footer*/
+
+/*INDEX*/
+
+  aside { padding: 15px;
+    display:flex;
+     flex-basis:0;
+     flex-grow: 1;
+     align-content: space-between;
+     flex-flow:column;
+     justify-content: space-between;
+   }
+ 
+  article {display:flex;
+     flex-direction: column;
+     width: 75%;
+     flex-basis:0;
+     flex-grow: 2;
+       }
+
+/*Contact*/
+
+.container
