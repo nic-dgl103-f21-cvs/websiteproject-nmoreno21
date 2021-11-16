@@ -1,6 +1,6 @@
 header { display: flex;
     padding: 0px; 
-    width: 100%;
+    width: 800px;
     margin: auto;  
 }
 h1 {
@@ -16,29 +16,29 @@ body {
     font-family: 'Cabin';
     font-size:18PX;
     background-color: rgb(223, 163, 12);
+    font-family: Trebuchet,sans-serif;
 }
+
 main.home {display:flex;
     padding: 0;
-    width: 100%;
-    margin: 0;
+    width: 1020px;
+    margin: auto;
   }
   /* start navigation */
 
 nav {
     background-color: rgb(238, 194, 83);
-    
+  
   }
   nav ul {display:flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
   
   nav li a { 
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
     text-decoration: none;
-    color: #191645;
+    color: #07033f;
   }
   
   nav li a:hover { 
@@ -85,23 +85,76 @@ p {display: flex;
 /*end footer*/
 
 /*INDEX*/
-
-  aside { padding: 15px;
-    display:flex;
-     flex-basis:0;
-     flex-grow: 1;
-     align-content: space-between;
-     flex-flow:column;
-     justify-content: space-between;
-   }
- 
-  article {display:flex;
+ article {display:flex;
      flex-direction: column;
      width: 75%;
      flex-basis:0;
      flex-grow: 2;
        }
 
+aside { padding: 15px;
+        display:flex;
+         flex-basis:0;
+         flex-grow: 1;
+         align-content: space-between;
+         flex-flow:column;
+         justify-content: space-between;
+       }
+     
+
 /*Contact*/
 
-.container
+/*indexgrid*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr 0.8fr 1.4fr;
+  grid-template-rows: 1fr 0.8fr 0.9fr 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture1 picture1 picture1 taglineh2 taglineh2"
+    "picture1 picture1 picture1 julianas_text julianas_text"
+    "servicesh2 servicesh2 servicesh2 picture2 picture2"
+    "services_list services_list services_list picture2 picture2"
+    "alliesh2 alliesh2 allies_logos allies_logos allies_logos";
+}
+
+.bluemakeup { grid-area: picture1; background-color: aqua;}
+
+.taglineh2 { grid-area: taglineh2;background-color: blueviolet;text-align: center; }
+.taglineh2 h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding:20px;
+}
+.julianas_text { grid-area: julianas_text;background-color: crimson; }
+.julianas_text p {display: flex;
+}
+  
+.redjacket { grid-area: picture2;background-color: darkgreen;
+  background-image:url(pictures_juno/redjacket.jpg);
+  background-repeat: no-repeat;
+background-size: contain; }
+
+.servicesh2 { grid-area: servicesh2;background-color: darkmagenta;}
+.servicesh2 h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.services_list { grid-area: services_list; background-color: darkslateblue;}
+
+.allies_logos { grid-area: allies_logos;background-color: deepskyblue; }
+
+.alliesh2 { grid-area: alliesh2; background-color: firebrick;}
+.alliesh2 h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding:20px;
+}
