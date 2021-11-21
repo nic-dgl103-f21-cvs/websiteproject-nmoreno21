@@ -1,3 +1,4 @@
+  /*---------------------GENERAL CSS---------------------*/
 header { display: flex;
     padding: 0px; 
     width: 800px;
@@ -22,9 +23,45 @@ body {
 main.home {display:flex;
     padding: 0;
     width: 1020px;
-    margin: auto;
+    margin: 0;
   }
-  /* start navigation */
+  /*FOOTER*/
+
+footer ul { 
+  display:flex;
+  list-style-type: none ;
+}
+p {display: flex;
+      margin: 10px;
+      padding: 10px;
+    }
+
+/*code taken from w3schools*/     
+.fa {
+      padding: 15px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-instagram {
+      background: #b4136c;
+      color: white;
+    }   
+    
+/*end footer*/
+/* start navigation */
 
 nav {
     background-color: rgb(238, 194, 83);
@@ -46,65 +83,9 @@ nav {
     color: white;
   }
   /* end navigation */
-
-/*FOOTER*/
-
-footer ul { 
-    display:flex;
-    list-style-type: none ;
-}
-p {display: flex;
-        margin: 10px;
-        padding: 10px;
-      }
-
- /*code taken from w3schools*/     
-.fa {
-        padding: 15px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 50%;
-      }
-.fa:hover {
-        opacity: 0.7;
-    }
-    
-.fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-.fa-instagram {
-        background: #b4136c;
-        color: white;
-      }   
-      
-/*end footer*/
-
-/*INDEX*/
- article {display:flex;
-     flex-direction: column;
-     width: 75%;
-     flex-basis:0;
-     flex-grow: 2;
-       }
-
-aside { padding: 15px;
-        display:flex;
-         flex-basis:0;
-         flex-grow: 1;
-         align-content: space-between;
-         flex-flow:column;
-         justify-content: space-between;
-       }
-     
-
-/*Contact*/
-
-/*indexgrid*/
+  /*---------------------END GENERAL CSS---------------------*/
+  
+  /*Index*/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr 0.8fr 1.4fr;
@@ -158,3 +139,6 @@ background-size: contain; }
   height: 200px;
   padding:20px;
 }
+/*Contact*/
+
+
