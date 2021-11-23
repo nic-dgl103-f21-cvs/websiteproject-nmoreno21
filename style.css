@@ -1,12 +1,15 @@
-  /*---------------------GENERAL CSS---------------------*/
+/* ===============
+   General CSS
+   =============== */
 header { display: flex;
     padding: 0px; 
-    width: 800px;
-    margin: auto;  
+    width: 80%;
+    margin:0%;  
 }
 h1 {
     font-family: 'Yuji Syuku';
-    font-size: 60px;
+    font-size: 100px;
+    margin:0;
   }
 h2,h3 
 {
@@ -15,7 +18,7 @@ h2,h3
   }
 body {
     font-family: 'Cabin';
-    font-size:18PX;
+    font-size:16PX;
     background-color: rgb(223, 163, 12);
     font-family: Trebuchet,sans-serif;
 }
@@ -32,20 +35,20 @@ footer ul {
   list-style-type: none ;
 }
 p {display: flex;
-      margin: 10px;
-      padding: 10px;
+      margin: 0;
+      padding: 0;
     }
 
 /*code taken from w3schools*/     
 .fa {
-      padding: 15px;
-      font-size: 30px;
-      width: 30px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-      border-radius: 50%;
-    }
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
 .fa:hover {
       opacity: 0.7;
   }
@@ -83,9 +86,13 @@ nav {
     color: white;
   }
   /* end navigation */
-  /*---------------------END GENERAL CSS---------------------*/
+/* ===============
+   End General CSS
+   =============== */
   
-  /*Index*/
+/* =============================================
+                       Index
+   ============================================= */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr 0.8fr 1.4fr;
@@ -97,12 +104,12 @@ nav {
     "picture1 picture1 picture1 julianas_text julianas_text"
     "servicesh2 servicesh2 servicesh2 picture2 picture2"
     "services_list services_list services_list picture2 picture2"
-    "alliesh2 alliesh2 allies_logos allies_logos allies_logos";
+    "allies_logos allies_logos allies_logos alliesh2 alliesh2";
 }
 
-.bluemakeup { grid-area: picture1; background-color: aqua;}
+.bluemakeup { grid-area: picture1; }
 
-.taglineh2 { grid-area: taglineh2;background-color: blueviolet;text-align: center; }
+.taglineh2 { grid-area: taglineh2;text-align: center; }
 .taglineh2 h2{
   display: flex;
   justify-content: center;
@@ -119,7 +126,7 @@ nav {
   background-repeat: no-repeat;
 background-size: contain; }
 
-.servicesh2 { grid-area: servicesh2;background-color: darkmagenta;}
+.servicesh2 { grid-area: servicesh2;}
 .servicesh2 h2{
   display: flex;
   justify-content: center;
@@ -131,7 +138,7 @@ background-size: contain; }
 
 .allies_logos { grid-area: allies_logos;background-color: deepskyblue; }
 
-.alliesh2 { grid-area: alliesh2; background-color: firebrick;}
+.alliesh2 { grid-area: alliesh2;}
 .alliesh2 h2{
   display: flex;
   justify-content: center;
@@ -139,6 +146,120 @@ background-size: contain; }
   height: 200px;
   padding:20px;
 }
-/*Contact*/
+/* ===============
+        End Index
+   =============== */
+/* =============================================
+                        CONTACT
+   ============================================= */
+  /*Base code taken from Claire´s-Forms codepen*/
+   
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* ===============
+     TYPOGRAPHY
+     =============== */
+  
+  .wrapper-form body {
+    font-family: sans-serif;
+  }
+  
+  /* ===============
+     BUTTONS
+     =============== */
+  
+  .wrapper-form input[type="reset"] {
+    color: #7a0d0d;
+    padding: 12px 20px;
+    border: 1px solid #7a0d0d;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .wrapper-form input[type="reset"]:hover {
+    background-color: #d1efe3;
+  }
+  
+  .wrapper-form input[type="submit"] {
+    background-color: #7a0d0d;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #7a0d0d;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .wrapper-form input[type="submit"]:hover {
+    background-color: #00ab66;
+  }
+  
+  /* ===============
+     STRUCTURE
+     =============== */
+  
+  .wrapper-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0;
+   }
+  .wrapper-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ===============
+     FORM CONTROLS
+     =============== */
+  
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  textarea {
+    font-family: sans-serif;
+  }
+  
+  fieldset {
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .label-required {
+    font-size: 0.8rem;
+    color: red;
+     }
+.contact {display: flex;}
+ 
+   /* ===============
+        End Contact
+   =============== */
 
 
