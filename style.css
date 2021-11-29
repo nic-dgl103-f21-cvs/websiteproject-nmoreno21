@@ -1,265 +1,404 @@
 /* ===============
    General CSS
    =============== */
-header { display: flex;
-    padding: 0px; 
-    width: 80%;
-    margin:0%;  
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  padding: 0px;
+  width: 80%;
+  margin: 0%;
 }
 h1 {
-    font-family: 'Yuji Syuku';
-    font-size: 100px;
-    margin:0;
-  }
-h2,h3 
-{
-    font-family: 'Yuji Syuku';
-    font-size: 40px;
-  }
+  font-family: "Yuji Syuku";
+  font-size: 100px;
+  margin: 0;
+}
+h2,
+h3 {
+  font-family: "Yuji Syuku";
+  font-size: 40px;
+}
 body {
-    font-family: 'Cabin';
-    font-size:16PX;
-    background-color: rgb(223, 163, 12);
-    font-family: Trebuchet,sans-serif;
+  font-family: "Cabin";
+  font-size: 16px;
+  background-color: rgb(223, 163, 12);
+  font-family: Trebuchet, sans-serif;
+}
+/* ----------------Start navigation----------------- */
+nav {
+  background-color: rgb(238, 194, 83);
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-main.home {display:flex;
-    padding: 0;
-    width: 1020px;
-    margin: 0;
-  }
-  /*FOOTER*/
-
-footer ul { 
-  display:flex;
-  list-style-type: none ;
+nav li a {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #a10101;
 }
-p {display: flex;
-      margin: 0;
-      padding: 0;
-    }
 
-/*code taken from w3schools*/     
+nav li a:hover {
+  background-color: #000000;
+  color: rgb(255, 230, 0);
+}
+
+/* ----------------End navigation----------------- */
+/*=================
+        FOOTER
+   ================*/
+.footer{display: flex;
+background-color:rgb(216, 180, 88) ;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding: 10px 30px;
+  background-color:rgb(216, 180, 88)
+}
+footer li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #a10101;
+  
+}
+footer p {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+/*code taken from w3schools*/
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 60px;
   width: 60px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+  margin: 7px 2px;
 }
 .fa:hover {
-      opacity: 0.7;
-  }
-  
+  opacity: 0.7;
+}
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
+  background-color: black;
+  color: white;
+  margin-left:30px;
+  margin-bottom: 10px;
+}
 .fa-instagram {
-      background: #b4136c;
-      color: white;
-    }   
-    
-/*end footer*/
-/* start navigation */
+  background: #a10101;
+  color: white;
+  margin-bottom: 10px;
+}
 
-nav {
-    background-color: rgb(238, 194, 83);
-  
-  }
-  nav ul {display:flex;
-    list-style-type: none;
-  }
-  
-  nav li a { 
-    padding: 15px;
-    display: inline-block;
-    text-decoration: none;
-    color: #07033f;
-  }
-  
-  nav li a:hover { 
-    background-color: #f5b70d;
-    color: white;
-  }
-  /* end navigation */
+/*end code taken from w3schools*/
+/*=================
+        END FOOTER
+   ================*/
+
 /* ===============
    End General CSS
    =============== */
-  
+
 /* =============================================
                        Index
    ============================================= */
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.8fr 0.8fr 1.4fr;
-  grid-template-rows: 1fr 0.8fr 0.9fr 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "picture1 picture1 picture1 taglineh2 taglineh2"
     "picture1 picture1 picture1 julianas_text julianas_text"
-    "servicesh2 servicesh2 servicesh2 picture2 picture2"
-    "services_list services_list services_list picture2 picture2"
-    "allies_logos allies_logos allies_logos alliesh2 alliesh2";
+    "servicesh2 servicesh2 services_list picture2 picture2"
+    "servicesh2 servicesh2 services_list  picture2 picture2"
+    "allies allies allies allies allies";
+}
+.bluemakeup h1{color:rgb(255, 183, 0);
+text-align: center;
+margin: 0px;
+}
+.bluemakeup h3 {color:rgb(255, 183, 0);
+text-align: right;
+margin-right: 50px;}
+
+.bluemakeup h1 { font-size:300px;}
+
+.bluemakeup {
+  grid-area: picture1;
+  background-image: url(pictures_juno/bluemakeup.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
 
-.bluemakeup { grid-area: picture1; }
+.neon {
+  grid-area: picture2;
+  background-image: url(pictures_juno/neon.png);
+  background-size: cover;
+  background-position-x: center;
+}
+.allies {
+  grid-area: allies;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
 
-.taglineh2 { grid-area: taglineh2;text-align: center; }
-.taglineh2 h2{
+.allies img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.taglineh2 {
+  grid-area: taglineh2;
+  text-align: center;
+}
+.taglineh2 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  padding:20px;
+  padding: 20px;
 }
-.julianas_text { grid-area: julianas_text;background-color: crimson; }
-.julianas_text p {display: flex;
+.julianas_text {
+  grid-area: julianas_text;
 }
-  
-.redjacket { grid-area: picture2;background-color: darkgreen;
-  background-image:url(pictures_juno/redjacket.jpg);
+.julianas_text p {
+  color: rgb(0, 0, 0);
+  margin: 50px;
+  text-align: center;
+}
+.redjacket {
+  grid-area: picture2;
+  background-color: darkgreen;
+  background-image: url(pictures_juno/redjacket.jpg);
   background-repeat: no-repeat;
-background-size: contain; }
+  background-size: contain;
+}
 
-.servicesh2 { grid-area: servicesh2;}
-.servicesh2 h2{
+.servicesh2 {
+  grid-area: servicesh2;
+}
+.servicesh2 h2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 200px;
 }
 
-.services_list { grid-area: services_list; background-color: darkslateblue;}
+.services_list {
+  grid-area: services_list;
+  text-align: left;
+  font-size: 18px;
+  margin-top: 120px;
+}
+.services_list li {
+  list-style-type: none;
 
-.allies_logos { grid-area: allies_logos;background-color: deepskyblue; }
+}
 
-.alliesh2 { grid-area: alliesh2;}
-.alliesh2 h2{
+.alliesh2 {
+  grid-area: alliesh2;
+}
+.alliesh2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  padding:20px;
+  padding: 20px;
 }
-/* ===============
-        End Index
-   =============== */
+/* =============================================
+                      End Index
+   ============================================= */
+
+/* =============================================
+                      MAKEUP
+   ============================================= */
+
+.makeup {display:flex;
+  padding: 0px;
+  width: 1100px;
+  margin: auto;
+}
+
+.glow {display: flex;
+  flex-wrap: wrap;
+  flex-basis:0;
+  flex-grow: 1;
+  flex-flow:column;
+  padding:25px;
+  justify-content: center;
+}
+
+.glow ul li { margin: 20px;
+  list-style-type: none;
+  padding: 0;}
+
+.glow h2 {margin-left:20px;}
+
+.gallery {display: flex;
+flex-wrap: wrap;
+flex-basis:0;
+flex-grow: 2;
+}
+
+/* =============================================
+                      WARDROBE
+   ============================================= */
+.fashion {display: flex;
+justify-content: right;}
+.fashion h1 {margin-top: 80px;}
+.styling {display: flex;
+flex-direction: column;
+margin:40px;}
+
+.costume { display: flex;
+}
+.design h2 {font-size: 50px;
+margin: 40px;}
+
+/* =============================================
+                      ABOUT
+   ============================================= */
+.about {display: flex;
+margin: 0px 0px 0px 80px;}
+
+.contenido {display: flex;
+flex-direction: column;
+text-align:right}
+
+.contenido p,h1{
+  margin-right: 30px;
+}
+
+.contenido h1 {
+  margin-top: 180px;
+}
+
+.contenido img {
+  height: 800px;
+  width: auto;
+}
 /* =============================================
                         CONTACT
    ============================================= */
-  /*Base code taken from Claire´s-Forms codepen*/
-   
-   * {
-    box-sizing: border-box;
-  }
-  
-  /* ===============
+/*Base code taken from Claire´s-Forms codepen*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===============
      TYPOGRAPHY
      =============== */
-  
-  .wrapper-form body {
-    font-family: sans-serif;
-  }
-  
-  /* ===============
+
+.wrapper-form body {
+  font-family: sans-serif;
+}
+
+/* ===============
      BUTTONS
      =============== */
-  
-  .wrapper-form input[type="reset"] {
-    color: #7a0d0d;
-    padding: 12px 20px;
-    border: 1px solid #7a0d0d;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .wrapper-form input[type="reset"]:hover {
-    background-color: #d1efe3;
-  }
-  
-  .wrapper-form input[type="submit"] {
-    background-color: #7a0d0d;
-    color: white;
-    padding: 12px 20px;
-    border: 1px solid #7a0d0d;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .wrapper-form input[type="submit"]:hover {
-    background-color: #00ab66;
-  }
-  
-  /* ===============
+
+.wrapper-form input[type="reset"] {
+  color: #7a0d0d;
+  padding: 12px 20px;
+  border: 1px solid #7a0d0d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper-form input[type="reset"]:hover {
+  background-color: #d1efe3;
+}
+
+.wrapper-form input[type="submit"] {
+  background-color: #7a0d0d;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #7a0d0d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper-form input[type="submit"]:hover {
+  background-color: #00ab66;
+}
+
+/* ===============
      STRUCTURE
      =============== */
-  
-  .wrapper-form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0;
-   }
-  .wrapper-button {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* ===============
+
+.wrapper-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===============
      FORM CONTROLS
      =============== */
-  
-  input,
-  select,
-  textarea {
-    font-size: 1em;
-  }
-  
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type="email"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  textarea {
-    font-family: sans-serif;
-  }
-  
-  fieldset {
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-  }
-  
-  .label-required {
-    font-size: 0.8rem;
-    color: red;
-     }
-.contact {display: flex;}
- 
-   /* ===============
+
+input,
+select,
+textarea {
+  font-size: 1em;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  font-family: sans-serif;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.label-required {
+  font-size: 0.8rem;
+  color: red;
+}
+.contact {
+  display: flex;
+}
+
+/* ===============
         End Contact
    =============== */
-
-
