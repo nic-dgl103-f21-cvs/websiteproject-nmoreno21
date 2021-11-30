@@ -22,7 +22,6 @@ h3 {
   font-size: 40px;
 }
 body {
-  font-family: "Cabin";
   font-size: 16px;
   background-color: rgb(223, 163, 12);
   font-family: Trebuchet, sans-serif;
@@ -148,7 +147,7 @@ footer p {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 270px 400px 400px 200px;
+  grid-template-rows:300px 400px 400px 280px 1px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -160,24 +159,28 @@ footer p {
 }
 .bluemakeup h1 {
   color: rgb(255, 183, 0);
-  text-align: center;
-  margin: 0px;
+  text-align: right;
+  margin-top: 290px;
+  padding: 0px;
+  margin-right: 0px;
 }
 .bluemakeup h3 {
   color: rgb(255, 183, 0);
-  text-align: right;
-  margin-right: 50px;
+  text-align:right;
+  margin-top: 0px;
+  margin-right:25px;
 }
 
 .bluemakeup h1 {
-  font-size: 300px;
+  font-size: 200px;
 }
 
 .bluemakeup {
   grid-area: picture1;
   background-image: url(pictures_juno/bluemakeup.jpg);
   background-size: cover;
-  background-position-x: center;
+  background-repeat: no-repeat;
+  background-position-x:center;
 }
 
 .neon {
@@ -248,6 +251,7 @@ footer p {
 }
 .services_list li {
   list-style-type: none;
+  font-family: "Yuji Syuku";
 }
 
 .alliesh2 {
@@ -350,16 +354,19 @@ table figure {width:196px;height: 290px;}
 .contenido p,
 h1 {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .contenido h1 {
-  margin-top: 180px;
+  margin-top: 60px;
+  font-size: 80px;
 }
 
-.contenido img {
-  height: 800px;
-  width: auto;
-}
+.contenido img {width:100%;
+  max-width: 520px;
+  height: auto
+  }
+.map {margin:10px 0px 0px 30px;}
 /* =============================================
                         CONTACT
    ============================================= */
@@ -397,7 +404,7 @@ margin:auto;
      =============== */
 
 .wrapper-form body {
-  font-family: sans-serif;
+  font-family:'Trebuchet MS', sans-serif
 }
 
 /* ===============
@@ -467,7 +474,7 @@ input[type="email"] {
 }
 
 textarea {
-  font-family: sans-serif;
+  font-family:'Trebuchet MS',sans-serif;
 }
 
 fieldset {
