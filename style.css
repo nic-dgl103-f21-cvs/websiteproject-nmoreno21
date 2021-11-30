@@ -220,7 +220,7 @@ footer p {
 .julianas_text {
   grid-area: julianas_text;
 }
-.julianas_text p {
+.julianas_text h2 {
   color: rgb(0, 0, 0);
   margin: 50px;
   text-align: center;
