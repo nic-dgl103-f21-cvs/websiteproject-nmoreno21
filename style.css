@@ -52,22 +52,22 @@ nav li a:hover {
 /*=================
         FOOTER
    ================*/
-.footer{display: flex;
-background-color:rgb(216, 180, 88) ;
+.footer {
+  display: flex;
+  background-color: rgb(216, 180, 88);
 }
 
 footer ul {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
-  padding: 10px 30px;
-  background-color:rgb(216, 180, 88)
+  padding: 10px 0px 10px 30px;
+  background-color: rgb(216, 180, 88);
 }
 footer li a {
   display: inline-block;
   text-decoration: none;
   color: #a10101;
-  
 }
 footer p {
   display: flex;
@@ -89,7 +89,7 @@ footer p {
 .fa-facebook {
   background-color: black;
   color: white;
-  margin-left:30px;
+  margin-left: 30px;
   margin-bottom: 10px;
 }
 .fa-instagram {
@@ -113,7 +113,7 @@ footer p {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 270px 400px 400px 200px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -123,15 +123,20 @@ footer p {
     "servicesh2 servicesh2 services_list  picture2 picture2"
     "allies allies allies allies allies";
 }
-.bluemakeup h1{color:rgb(255, 183, 0);
-text-align: center;
-margin: 0px;
+.bluemakeup h1 {
+  color: rgb(255, 183, 0);
+  text-align: center;
+  margin: 0px;
 }
-.bluemakeup h3 {color:rgb(255, 183, 0);
-text-align: right;
-margin-right: 50px;}
+.bluemakeup h3 {
+  color: rgb(255, 183, 0);
+  text-align: right;
+  margin-right: 50px;
+}
 
-.bluemakeup h1 { font-size:300px;}
+.bluemakeup h1 {
+  font-size: 300px;
+}
 
 .bluemakeup {
   grid-area: picture1;
@@ -146,15 +151,20 @@ margin-right: 50px;}
   background-size: cover;
   background-position-x: center;
 }
-.allies {
-  grid-area: allies;
+.allies_logos {
+  margin: 0;
+  padding: 20px;
+  color: rgb(255, 183, 0);
   display: flex;
   justify-content: space-around;
-  margin: 10px;
+  background-color: #5f0303;
 }
 
-.allies img {
-  margin: 20px;
+.allies_logos p {
+  margin: 40px 0px 40px 0px;
+}
+.allies_logos img {
+  height: 100px;
   border-radius: 20px;
 }
 
@@ -203,7 +213,6 @@ margin-right: 50px;}
 }
 .services_list li {
   list-style-type: none;
-
 }
 
 .alliesh2 {
@@ -224,59 +233,86 @@ margin-right: 50px;}
                       MAKEUP
    ============================================= */
 
-.makeup {display:flex;
+.makeup {
+  display: flex;
   padding: 0px;
-  width: 1100px;
-  margin: auto;
+
+  margin: 0px 0px 0px 80px;
 }
 
-.glow {display: flex;
+.glow {
+  display: flex;
   flex-wrap: wrap;
-  flex-basis:0;
+  flex-basis: 0;
   flex-grow: 1;
-  flex-flow:column;
-  padding:25px;
+  flex-flow: column;
+  padding: 25px;
   justify-content: center;
 }
 
-.glow ul li { margin: 20px;
+.glow ul li {
+  margin: 20px;
   list-style-type: none;
-  padding: 0;}
+  padding: 0;
+}
 
-.glow h2 {margin-left:20px;}
+.glow h2 {
+  margin-left: 20px;
+}
 
-.gallery {display: flex;
-flex-wrap: wrap;
-flex-basis:0;
-flex-grow: 2;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  flex-grow: 2;
+  justify-content: right;
+}
+
+.gallery img {
+  height: 300px;
+  width: auto;
 }
 
 /* =============================================
                       WARDROBE
    ============================================= */
-.fashion {display: flex;
-justify-content: right;}
-.fashion h1 {margin-top: 80px;}
-.styling {display: flex;
-flex-direction: column;
-margin:40px;}
-
-.costume { display: flex;
+.fashion {
+  display: flex;
+  justify-content: right;
 }
-.design h2 {font-size: 50px;
-margin: 40px;}
+.fashion h1 {
+  margin-top: 80px;
+}
+.styling {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.costume {
+  display: flex;
+}
+.design h2 {
+  font-size: 50px;
+  margin: 40px;
+}
 
 /* =============================================
                       ABOUT
    ============================================= */
-.about {display: flex;
-margin: 0px 0px 0px 80px;}
+.about {
+  display: flex;
+  margin: 0px 0px 0px 80px;
+}
 
-.contenido {display: flex;
-flex-direction: column;
-text-align:right}
+.contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
 
-.contenido p,h1{
+.contenido p,
+h1 {
   margin-right: 30px;
 }
 
@@ -293,10 +329,23 @@ text-align:right}
    ============================================= */
 /*Base code taken from Claire´s-Forms codepen*/
 
-* {
-  box-sizing: border-box;
+* {box-sizing: border-box;
 }
+.contact-layout{display:flex;
+}
+.contact-layout img {height:700px;}
+.form-title {display:flex;
+flex-direction: column;
+width:800px;
+margin:auto;}
 
+.contact-picture figure {height:700px;}
+
+.form-title h1 {font-size: 60px;}
+.radio-buttons {margin:10px 0px 10px 0px;}
+@media only screen and (min-width: 768px) {
+  
+.form-title p {margin:20px 0px 20px 0px;}
 /* ===============
      TYPOGRAPHY
      =============== */
@@ -397,6 +446,11 @@ fieldset {
 }
 .contact {
   display: flex;
+}
+
+figure {
+  margin-inline: 0;
+  margin-block: 0;
 }
 
 /* ===============
