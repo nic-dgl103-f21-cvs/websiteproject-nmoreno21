@@ -246,7 +246,7 @@ footer p {
 .services_list {
   grid-area: services_list;
   text-align: left;
-  font-size: 18px;
+  font-size: 40px;
   margin-top: 120px;
 }
 .services_list li {
