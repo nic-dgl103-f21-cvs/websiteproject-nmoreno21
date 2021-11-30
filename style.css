@@ -8,7 +8,7 @@
 header {
   display: flex;
   padding: 0px;
-  width: 80%;
+  width: 100%;
   margin: 0%;
 }
 h1 {
@@ -102,6 +102,41 @@ footer p {
 /*=================
         END FOOTER
    ================*/
+@media only screen and (max-width: 797px) {
+    .contact-layout { margin:20px;}
+    .fa {
+      padding: 4px;
+      font-size: 60px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+      margin: 7px 2px;
+    }
+
+    footer a {height: 25px;
+    width:auto;}
+  
+    .form-title {display:flex;
+      flex-direction: column;
+      width:100px;
+      margin:auto;}
+    }
+    
+@media only screen and (max-width: 1000px) {
+  .contact-layout img {display: none;  }
+}
+
+@media only screen and (max-width: 1242px) { 
+  .contact-layout img {
+    width:100%;
+    max-width: 100px;
+    height: auto;}
+
+  .form-title p,h1,form {padding-left:15px;
+  padding-right:15px}  
+  
+}
+
 
 /* ===============
    End General CSS
@@ -260,18 +295,19 @@ footer p {
   margin-left: 20px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 0;
-  flex-grow: 2;
-  justify-content: right;
+.gallery {width:1000px;}
+
+.gallery table {border-spacing:0px;
+   border-collapse:collapse;}
+   
+.gallery img{
+  width:100%;
+    max-width: 350px;
+    height: auto;}
 }
 
-.gallery img {
-  height: 300px;
-  width: auto;
-}
+table figure {width:196px;height: 290px;}
+
 
 /* =============================================
                       WARDROBE
@@ -333,19 +369,29 @@ h1 {
 }
 .contact-layout{display:flex;
 }
-.contact-layout img {height:700px;}
+.contact-layout img {
+  width:100%;
+  max-width: 520px;
+  height: auto;
+  
+}
 .form-title {display:flex;
 flex-direction: column;
-width:800px;
-margin:auto;}
+width:700px;
+margin:auto;
+}
 
 .contact-picture figure {height:700px;}
 
 .form-title h1 {font-size: 60px;}
 .radio-buttons {margin:10px 0px 10px 0px;}
-@media only screen and (min-width: 768px) {
-  
 .form-title p {margin:20px 0px 20px 0px;}
+
+.contact-layout form {
+  background-color: rgb(238, 194, 83);
+  padding:20px;
+  border-radius: 15px;
+}
 /* ===============
      TYPOGRAPHY
      =============== */
@@ -358,45 +404,34 @@ margin:auto;}
      BUTTONS
      =============== */
 
-.wrapper-form input[type="reset"] {
-  color: #7a0d0d;
+.form-title input[type="reset"] {
+  color: #a10101;
   padding: 12px 20px;
-  border: 1px solid #7a0d0d;
+  border: 1px solid #a10101;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.wrapper-form input[type="reset"]:hover {
-  background-color: #d1efe3;
+.form-title input[type="reset"]:hover {
+  background-color: rgb(216, 180, 88);
 }
 
-.wrapper-form input[type="submit"] {
-  background-color: #7a0d0d;
+.form-title input[type="submit"] {
+  background-color: #a10101;
   color: white;
   padding: 12px 20px;
-  border: 1px solid #7a0d0d;
+  border: 1px solid #a10101;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.wrapper-form input[type="submit"]:hover {
-  background-color: #00ab66;
-}
-
-/* ===============
-     STRUCTURE
-     =============== */
-
-.wrapper-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 600px;
-  margin: 0;
+.form-title input[type="submit"]:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
 }
 .wrapper-button {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 /* ===============
@@ -444,14 +479,12 @@ fieldset {
   font-size: 0.8rem;
   color: red;
 }
-.contact {
-  display: flex;
-}
 
 figure {
   margin-inline: 0;
   margin-block: 0;
 }
+
 
 /* ===============
         End Contact
